@@ -8,12 +8,17 @@ class BalihooSimulator(object):
         self._requests = [url + r for r in [
             "?q=Ping&d=Please+return+OK+so+that+I+know+your+service+works.",
             "?q=Referrer&d=How+did+you+hear+about+this+position%3F",
-            "?q=Puzzle&d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3E-%0AB--%3C-%0AC--%3D-%0AD%3E---%0A",
+            #"?q=Puzzle&d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3E-%0AB--%3C-%0AC--%3D-%0AD%3E---%0A",
+            "?q=Puzzle&d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3C-%0AB---%3E%0AC--%3D-%0AD--%3E-%0A",
             "?q=Position&d=Which+position+at+Balihoo+are+you+applying+for%3F",
             "?q=Name&d=What+is+your+full+name%3F",
             "?q=Status&d=Can+you+provide+proof+of+eligibility+to+work+in+the+US%3F",
             "?q=Resume&d=Please+provide+a+URL+where+we+can+download+your+resume+and+cover+letter.",
             "?q=Source&d=Please+provide+a+URL+where+we+can+download+the+source+code+of+your+resume+submission+web+service.",
+            "?q=Degree&d=Please+list+your+relevant+university+degree%28s%29.",
+            "?q=Email+Address&d=What+is+your+email+address%3F",
+            "?q=Phone&d=Please+provide+a+phone+number+we+can+use+to+reach+you.",
+            "?q=Years&d=How+many+years+of+software+development+experience+do+you+have%3F",
         ]]
 
     def make_requests(self):
